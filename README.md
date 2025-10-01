@@ -26,13 +26,13 @@ Bertambahnya postingan hingga 50 dapat menimbulkan dua masalah utama: **pengalam
 
 Solusi yang lebih tepat bukan pada grid itu sendiri, melainkan pada cara memuat konten. Grid tetap dipakai untuk menata layout, tetapi ditambah mekanisme **pagination** (misalnya 12 postingan per halaman) atau **infinite scroll dengan lazy loading**. Pagination lebih ringan dan terstruktur, sedangkan *infinite scroll* memberi pengalaman mulus seperti Instagram. Dengan kombinasi grid yang rapi dan teknik pemuatan bertahap, masalah UX dan performa dapat diminimalisasi.
 
-# kamllhm25 • Instagram Bootstrap Clone 📸
+# kamllhm25 • Instagram Bootstrap  
 
 Aplikasi web sederhana berupa replika (clone) halaman profil Instagram yang dibuat menggunakan HTML, CSS, dan framework **Bootstrap 5**.
 
 ---
 
-## 🚀 Penjelasan Singkat
+## Penjelasan Singkat
 
 Proyek ini adalah implementasi *frontend* dari tampilan halaman profil Instagram, berfokus pada desain yang **responsif** agar dapat ditampilkan dengan baik di perangkat seluler dan desktop.
 
@@ -46,7 +46,7 @@ Proyek ini adalah implementasi *frontend* dari tampilan halaman profil Instagram
 
 ---
 
-## 📁 Struktur File
+## Struktur File
 
 Proyek ini mengasumsikan struktur file dasar sebagai berikut:
 
@@ -64,7 +64,7 @@ Proyek ini mengasumsikan struktur file dasar sebagai berikut:
 ```
 ---
 
-## 🛠️ Build dan Run
+## Build dan Run
 
 Karena ini adalah aplikasi *frontend* statis (hanya HTML dan CSS), Anda tidak memerlukan proses *build* yang kompleks.
 
@@ -86,7 +86,7 @@ Aplikasi akan langsung berjalan di browser Anda.
 
 ---
 
-## 🔗 Dependensi (Dependencies)
+## Dependensi (Dependencies)
 
 Proyek ini memanfaatkan beberapa sumber daya eksternal yang di-link melalui **CDN (Content Delivery Network)**, serta satu file CSS lokal.
 
