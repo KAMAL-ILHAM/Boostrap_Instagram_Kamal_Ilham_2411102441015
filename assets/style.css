@@ -1,0 +1,345 @@
+
+body {
+    background-color: #fafafa;
+    color: #262626;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    border-right: 1px solid #dbdbdb;
+    padding: 8px 12px 20px;
+}
+
+.sidebar .instagram-logo {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 28px;
+    padding: 25px 12px 35px 12px;
+}
+
+.sidebar .nav-link {
+    color: #262626;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f2f2f2;
+}
+
+.sidebar .nav-link.active {
+    font-weight: 600;
+}
+
+.sidebar .nav-link .icon {
+    font-size: 1.6rem;
+    margin-right: 16px;
+    width: 26px;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+}
+
+.sidebar-profile-pic {
+    width: 24px;     
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;  
+}
+
+.main-content-wrapper {
+    max-width: 975px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.profile-header .profile-pic-container {
+    width: 160px;
+    height: 160px;
+}
+
+.profile-header .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-header .username {
+    font-size: 20px;
+    margin-top: 6px;
+    font-weight: 400 !important;
+}
+
+.profile-stats p span {
+    font-weight: 600 !important;
+}
+
+.profile-header .action-btn {
+    background-color: #efefef;
+    border: none;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.profile-header .action-btn:hover {
+    background-color: #dbdbdb;
+}
+
+.verified-badge {
+    font-size: 0.5rem;
+    vertical-align: middle;
+    margin-top: 1px;
+}
+
+.story-highlight {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.story-highlight-img {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #dbdbdb;
+    padding: 3px;
+}
+
+.story-highlight span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.story-highlights-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 0;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.story-highlights-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+.content-tabs {
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.content-tabs a {
+    color: #8e8e8e;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid transparent;
+}
+
+.content-tabs a i {
+    font-size: 1.5rem;
+}
+
+.content-tabs a.active {
+    color: #262626;
+    border-bottom: 2px solid #262626;
+}
+
+.photo-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.photo-item:hover .photo-overlay {
+    opacity: 1;
+}
+
+.footer-links {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.top-navbar,
+.bottom-navbar {
+    background-color: #ffffff;
+    border-color: #dbdbdb;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.bottom-navbar {
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .bottom-navbar {
+        display: none;
+    }
+}
+
+.top-navbar {
+    top: 0;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 8px 16px;
+}
+
+.bottom-navbar {
+    bottom: 0;
+    border-top: 1px solid #dbdbdb;
+    padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
+}
+
+.bottom-navbar a {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 575.98px) {
+    .main-content-wrapper {
+        padding: 56px 0 16px 0;
+    }
+
+    .mobile-header-padding {
+        padding: 16px;
+    }
+    
+    .mobile-profile-pic {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .mobile-username {
+        font-size: 20px;
+        font-weight: 400 !important;
+    }
+
+    .mobile-action-btn {
+        background-color: #efefef;
+        border: none;
+        font-weight: 600;
+        padding: 7px 10px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+
+    .mobile-stats-bar {
+        border-top: 1px solid #dbdbdb;
+        border-bottom: 1px solid #dbdbdb;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mobile-stats-bar .stat-item span {
+        font-size: 14px;
+        display: block;
+    }
+    
+    .mobile-stats-bar .stat-item .stat-number {
+        font-weight: 600;
+    }
+    
+    .d-block.d-sm-none .story-highlights-section {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .content-tabs {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .main-content-wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+.profile-header .action-btn{
+    font-size: 11.2px;
+    padding: 6px 12px;
+}
+
+.floating-chat-btn {
+    position: fixed;
+    z-index: 1030; 
+    background-color: #ffffff;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    
+    right: 20px;
+    bottom: 75px; 
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.floating-chat-btn:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 992px) {
+    .floating-chat-btn {
+        right: 55px;
+        bottom: 24px;
+        width: auto; 
+        height: auto;
+        border-radius: 50px;
+        padding: 8px 16px;
+        gap: 8px;
+    }
+    .profile-header .action-btn{
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .floating-chat-btn:hover {
+        transform: scale(1.05);
+    }
+}
